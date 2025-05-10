@@ -1,0 +1,48 @@
+folder structure.
+
+
+project alif:
+
+assets --- 
+js, -- main.js, library -- gsap, jquery
+style -- styles.scss , _header.scss , _banner.scss 
+fonts 
+images, 
+svgs, 
+icons
+index.html
+
+
+
+
+
+strutre:
+<body>
+<header>
+	<div class="container">
+		<div class="logo"></div>
+		<div class="primaryNavbar">
+			<nav><ul> <li></li>  </ul> </nav>
+		</div>
+	</div>
+</header>
+<main> 
+	<section class="herobanner">
+		<div class="container">
+			<div class="animate"> 
+				<h1> ind design </h1>
+			</div>
+			
+		</div>
+	</sec
+
+
+
+nav-bar content:
+About us 
+
+HMR waterfront 
+
+Emaar oceanfront 
+
+Contact us 

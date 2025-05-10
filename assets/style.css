@@ -1,0 +1,151 @@
+*{
+ font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
+header{
+    background-color: #fffbfb;
+    padding: 10px 0;
+}
+.logo span{
+  font-size: 20px;
+  font-weight: 500;
+}
+.headRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #fffbfb;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav li {
+    margin: 0 7px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    text-decoration: underline;
+    color: #c8c8c8;
+  }
+  
+  .herobanner{
+    height: 70vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    z-index:  10;
+    background: rgb(255, 255, 255);
+  }  
+
+  .headContent{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+  }
+.heroimage{
+   
+}
+
+.contentMainWrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.sidelist{
+    width: 30%;
+}
+
+.sidelist ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contentItemWrap{
+    width: 70%;
+}
+
+.contentItem{
+    width: 100%;
+}
+
+.contentItem img{
+    width: 100%;
+}
+
+
+
+
+
+.contentPopup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.popupead{
+  background-color: white;
+  padding: 10px 20px;
+  width: 100%;
+   position: absolute;
+    top: 0;
+    left: 0;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popupContent {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 96vw;
+    max-height: 96vh;
+    overflow-y: auto;
+    /* width: 100%; */
+    text-align: center;
+}
+
+.popupImage img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.closePopup {
+    background: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+   
+}
