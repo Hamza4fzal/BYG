@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BYG - Coming Soon</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+  /* Basic reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .container {
+    text-align: center;
+    padding: 3rem 4rem;
+  }
+
+  .logo {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #ffffff;
+    animation: pulse 3s ease-in-out infinite;
+    user-select: none;
+    margin-bottom: 1rem;
+  }
+
+  .coming-soon {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #ddd;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.5s;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 1s;
+  }
+
+  /* Animated dots after Coming Soon */
+  .dots::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: blink 1.5s infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.7;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .logo {
+      font-size: 4rem;
+    }
+    .coming-soon {
+      font-size: 1.8rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Coming Soon Page">
+    <div class="logo" aria-label="BYG Logo">BYG</div>
+    <h1 class="coming-soon dots" aria-live="polite">Coming Soon</h1>
+    <p class="subtitle">Bin Yousuf Marketing Company - Launching Soon</p>
+  </div>
+</body>
+</html>
+
