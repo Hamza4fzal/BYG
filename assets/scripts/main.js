@@ -16,9 +16,47 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // GSAP and ScrollTrigger for scaling the first contentItem image
+    gsap.registerPlugin(ScrollTrigger);
 
+    // Select the first contentItem image
+    const firstContentItemImage = document.querySelector("#list1 .contentItemImage img");
+    const sidelist = document.querySelector(".sidelist");
+    const contentItemWrap = document.querySelector(".contentItemWrap");
 
-       // Popup functionality
+    // GSAP animation for scaling the first image
+    gsap.fromTo(
+        firstContentItemImage,
+        { scale: 1.85 }, // Initial scale
+        {
+            scale: 1, // Final scale
+            scrollTrigger: {
+                trigger: sidelist, // Trigger when the sidelist reaches the top
+                start: "top top", // Start when the top of sidelist reaches the top of the viewport
+                end: "+=500", // End after 500px of scrolling
+                scrub: true, // Smooth animation on scroll
+                pin: contentItemWrap, // Pin the contentItemWrap during the animation
+                pinSpacing: false, // Prevent extra space from being added
+            },
+        }
+    );
+
+    // Pin the sidelist during the animation
+    gsap.fromTo(
+        sidelist,
+        {},
+        {
+            scrollTrigger: {
+                trigger: sidelist,
+                start: "top top",
+                end: "+=500",
+                pin: true, // Pin the sidelist
+                pinSpacing: false, // Prevent extra space from being added
+            },
+        }
+    );
+
+    // Popup functionality
     const contentItems = document.querySelectorAll(".contentItem");
     const popup = document.querySelector(".contentPopup");
     const popupImage = popup.querySelector(".popupImage img");

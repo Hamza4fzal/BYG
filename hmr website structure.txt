@@ -46,6 +46,9 @@ HMR waterfront
 Emaar oceanfront 
 
 Contact us 
+
+Project lists:
+A. Emaar
 1.panaroma
 2.park edge
 3.ready to move(heading)
@@ -53,6 +56,10 @@ coral towers, pearl and reef towers
 4.the views
 
 B.HMR
+1.aa waterfront
 2. beach terraces by metro
+3.gold crest residence
+4.h&s residence
+5.h1 tower
 6.saima marina
 7.saima waterfront

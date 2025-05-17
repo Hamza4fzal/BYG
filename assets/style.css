@@ -110,7 +110,12 @@ nav {
 }
 
 
-
+.contentItemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
 
 
 .contentPopup {
